@@ -2,6 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 class Header extends React.Component {
+  constructor(){
+    super();
+    this.state={
+
+    }
+    this.handleLogout = this.handleLogout.bind(this)
+  }
+  handleLogout(){
+    localStorage.removeItem('user')
+    window.location.reload(true)
+  }
   render() {
     return (
       <div className="row nav">
@@ -12,14 +23,17 @@ class Header extends React.Component {
           <div className="col-sm-3">
           
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-3">
           
           </div>
           <div className="col-sm-1">
-            <Link to="/signup"><h2 className="signup">Signup</h2></Link>
+          <a href=""><h2 className="signup">Explore</h2></a>
           </div>
           <div className="col-sm-1">
-            <Link to="/"><h2 className="login">Login</h2></Link>
+            <a href=""><h2 className="signup">Post</h2></a>
+          </div>
+          <div className="col-sm-1">
+            <a onClick={this.handleLogout}><h2 className="login">Logout</h2></a>
           </div>
         </div>
       </div>

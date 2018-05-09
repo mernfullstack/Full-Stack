@@ -8,3 +8,7 @@ export const userLoginError = createAction(constants.USER_LOGIN_ERROR);
 export const userSignUpRequest = createAction(constants.USER_SIGNUP_REQUEST);
 export const userSignUpSuccess = createAction(constants.USER_SIGNUP_SUCCESS);
 export const userSignUpError = createAction(constants.USER_SIGNUP_ERROR);
+
+export const userBlogRequest = createAction(constants.USER_BLOG_REQUEST);
+export const userBlogSuccess = createAction(constants.USER_BLOG_SUCCESS);
+export const userBlogError = createAction(constants.USER_BLOG_ERROR);

@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../redux/actions'
-import Header from '../components/header/header'
+import Header from '../components/header/profileHeader'
+import { isUserAlreadyLoggedIn } from '../generic/index'
 
 class Profile extends React.Component{
     constructor(props){
@@ -11,7 +12,7 @@ class Profile extends React.Component{
      }
      componentDidMount() {
         const { login, history } = this.props;
-		!login.userLogin.isLoggedIn ? history.push('/') : null
+		!isUserAlreadyLoggedIn() ? history.push('/') : null
      }
     render(){
         const { email, password } = this.state;
@@ -21,8 +22,12 @@ class Profile extends React.Component{
                 <div className='row'>
                     <div className='col-sm-12'>
                         <div className='row'>
-                            <div className='col-sm-3'>
-                                <h1>Profile Page</h1>
+                            <div className='col-sm-4'>
+                            </div>
+                            <div className='col-sm-4'>
+                                <h1 className="pageHeading">Profile Page</h1>
+                            </div>
+                            <div className='col-sm-4'>
                             </div>
                         </div>
                     </div>

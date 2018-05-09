@@ -12,7 +12,7 @@ which can be used from chrome dev Tools to inspect Reducers.
 git clone https://github.com/InfinityCoders-com/reactReduxSagaStarterKit.git  
 cd reactReduxSagaStarterKit  
 **npm install**  
-**npm start**                      // start dev app at [localhost:3000](http://localhost:3000)  
+**npm start**                      // start dev app at [localhost:5000](http://localhost:5000)  
 
 ## BUILDING APP
 **npm run build**

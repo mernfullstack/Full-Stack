@@ -24,7 +24,9 @@ class SignUp extends React.Component{
 	}
     onSubmitSignUp(){
         const { email, password } = this.state;
-        this.props.userSignUpRequest({email: email, password: password});
+        this.props.userSignUpRequest({'email': email, 'password': password});
+        console.log(this.state);
+        
     }
     render(){   
         const { email, password } = this.state;
@@ -36,6 +38,7 @@ class SignUp extends React.Component{
                         <div className='row'>
                             <div className='col-sm-3'></div>
                             <div className='col-sm-6 form'>
+                            <h1 className="pageHeading">Signup</h1>
                                 <input
                                     type='email'
                                     placeholder='Email'

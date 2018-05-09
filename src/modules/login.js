@@ -41,18 +41,21 @@ class Login extends React.Component{
                         <div className='row'>
                             <div className='col-sm-3'></div>
                             <div className='col-sm-6 form'>
+                                <h1 className="pageHeading">Login</h1>
                                 <input
                                     type='email'
                                     placeholder='Email'
                                     value={email}
                                     onChange={(e) => this.setState({email: e.target.value})}
                                 />
+                                <br />
                                 <input
                                     type='password'
                                     placeholder='Password'
                                     value={password}
                                     onChange={(e) => this.setState({password: e.target.value})}
                                 />
+                                <br />
                                 <button onClick={() => this.onSubmitLogin()} >LOGIN</button>
                             </div>
                         </div>

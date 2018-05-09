@@ -10,6 +10,8 @@ export function* loginRequest (action) {
       'password': action.payload.password
     });
     if (response && (response.status === 200 || response.status === 304) ) {
+      localStorage.setItem('user', response.data)
+      localStorage.getItem('user')
       yield put(actions.userLoginSuccess(response.data));
     } else if (response && response.error === 1) {
       yield put(actions.userLoginError('Invalid Login...'));
