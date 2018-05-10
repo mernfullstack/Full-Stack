@@ -16,6 +16,6 @@ export default function fireAjax (method, URL, data, api) {
                 'Content-Type': 'application/json'
             }
         }
-        return axios.post( URL, data, headers );
+        return axios.get( URL, data, headers );
     }
 }

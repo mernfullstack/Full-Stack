@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../redux/actions'
 import Header from '../components/header/header'
+import { Link } from "react-router-dom";
 
 class SignUp extends React.Component{
     constructor(props){
@@ -52,6 +53,8 @@ class SignUp extends React.Component{
                                     onChange={(e) => this.setState({password: e.target.value})}
                                 />
                                 <button onClick={() => this.onSubmitSignUp()} >SIGN UP</button>
+                                <br />
+                               <p className="or"> or</p> <Link to='/'><span className="links">Login</span></Link>
                             </div>
                         </div>
                     </div>

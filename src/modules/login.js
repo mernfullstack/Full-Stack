@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../redux/actions'
+import { Link } from "react-router-dom";
 import Header from '../components/header/header'
 
 class Login extends React.Component{
@@ -57,6 +58,8 @@ class Login extends React.Component{
                                 />
                                 <br />
                                 <button onClick={() => this.onSubmitLogin()} >LOGIN</button>
+                                <br />
+                               <p className="or"> or</p> <Link to='/signup'><span className="links">Signup</span></Link>
                             </div>
                         </div>
                     </div>
