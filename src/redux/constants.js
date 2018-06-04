@@ -9,3 +9,7 @@ export const USER_SIGNUP_ERROR = 'USER_SIGNUP_ERROR';
 export const USER_BLOG_REQUEST = 'USER_BLOG_REQUEST';
 export const USER_BLOG_SUCCESS = 'USER_BLOG_SUCCESS';
 export const USER_BLOG_ERROR = 'USER_BLOG_ERROR';
+
+export const POST_REQUEST = 'POST_REQUEST';
+export const POST_SUCCESS = 'POST_SUCCESS';
+export const POST_ERROR = 'POST_ERROR';

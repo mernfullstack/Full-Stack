@@ -29,6 +29,7 @@ class Login extends React.Component{
 		}
 	}
     onSubmitLogin(){
+        localStorage.setItem("details",JSON.stringify(this.state))
         const { email, password } = this.state;
         this.props.userLoginRequest({email: email, password: password});
     }

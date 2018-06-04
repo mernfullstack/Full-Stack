@@ -27,10 +27,10 @@ class Header extends React.Component {
           
           </div>
           <div className="col-sm-1">
-          <a href=""><h2 className="signup">Explore</h2></a>
+            <Link to="/profile"><a href=""><h2 className="signup">Explore</h2></a></Link>
           </div>
           <div className="col-sm-1">
-            <a href=""><h2 className="signup">Post</h2></a>
+            <Link to="/posts"><a href=""><h2 className="signup">Post</h2></a></Link>
           </div>
           <div className="col-sm-1">
             <a onClick={this.handleLogout}><h2 className="login">Logout</h2></a>

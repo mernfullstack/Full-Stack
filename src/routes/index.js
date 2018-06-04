@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import Login from '../modules/login';
 import SignUp from '../modules/signUp';
 import Profile from '../modules/profile';
+import Explore from '../modules/explore';
 
 import createStore from '../store/createStore'
 
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route exact path="/" component={Login} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/posts" component={Explore} />
           </div>
         </HashRouter >
       </Provider>
